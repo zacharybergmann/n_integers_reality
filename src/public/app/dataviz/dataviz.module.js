@@ -1,1 +1,3 @@
-angular.module('dataviz', ['ngRoute']);
+angular.module('dataviz', [
+  'nvd3',
+]);
