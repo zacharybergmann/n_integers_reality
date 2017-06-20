@@ -2,4 +2,7 @@ node_modules
 bower_components
 .env
 docker-compose.yml
+dist/
+dist
+bundle.js
 
