@@ -1,6 +1,6 @@
 <div class="addcontend">
    <div>
-     <input ng-model="data"\> <button onClick="addItem()">Add Input Value</button>
+     <input ng-model="item"\> <button ng-click="$ctrl.addItem(item); item=''">Add Input Value</button>
    </div>
    <div>
      <nvd3 options="options" data="data"></nvd3>
