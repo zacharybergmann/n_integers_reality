@@ -27,5 +27,7 @@
     "style-loader": "^0.18.2",
     "webpack": "^3.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
 }
