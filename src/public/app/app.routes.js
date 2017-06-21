@@ -4,9 +4,9 @@ angular
     $locationProvider.hashPrefix('!');
 
     $routeProvider
-    .when('/dataviz', {
-      template: '<dataviz></dataviz>',
-    })
-    .otherwise('/dataviz');
-  },
-  ]);
+      .when('/dataviz', {
+        template: '<dataviz></dataviz>',
+      })
+      .otherwise('/dataviz');
+  }],
+);

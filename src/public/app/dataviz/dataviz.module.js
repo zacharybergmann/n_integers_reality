@@ -1,3 +1,3 @@
 angular.module('dataviz', [
-  'nvd3',
+  'tc.chartjs',
 ]);
