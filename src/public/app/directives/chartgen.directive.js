@@ -10,13 +10,16 @@ angular.module('chartGenDirective')
         {
           label: 'Dataset #1',
           data: [],
-          backgroundColor: '#FF6384',
-          hoverBackgroundColor: '#FF6384',
+          backgroundColor: '#31298e',
+          hoverBackgroundColor: '#31298e',
         },
       ],
     };
 
     $scope.chartOptions = {
+      legend: {
+        display: false,
+      },
       scales: {
         yAxes: [
           {
@@ -52,6 +55,7 @@ angular.module('chartGenDirective')
     $scope.onChartClick = event => console.log(event);
 
     $scope.createPlot = (dataPtsStr) => {
+      $scope.chartData.datasets[0].data = [];
       const regex = /\)[^0-9]+\(*/;
       const applyRegex = new RegExp(regex, 'gi');
       const cleanedDataPts = dataPtsStr.trim().slice(1, dataPtsStr.length - 1).split(applyRegex);

@@ -4,8 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>N-Integers Prompt</title>
-    <link rel="stylesheet" href="styles/styles.css"></script>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/styles.css"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular/angular.js"></script>
@@ -22,7 +22,7 @@
     <script src="app/dataviz/dataviz.component.js"></script>
   </head>
 
-<body class="container-fluid row">
+<body id="body" class="container-fluid row">
   <div class="row navig">
     <ul class="nav nav-tabs row">
       <li role="presentation" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6"></li>
@@ -32,8 +32,8 @@
   </div>
   <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
   <div class="row col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
-    <h1>Hello World!</h1>
-  
+    <h1 style="text-align:center">Plot your data!</h1>
+    <br />
     <div ng-view></div>
   
   </div>

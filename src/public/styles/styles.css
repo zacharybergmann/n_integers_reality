@@ -1,11 +1,12 @@
-.nav {
-  background-color: #a9ff91;
-  font-size: 1.5em; 
+#body {
+  background-color: #f2f6fc;
 }
 
-.navitem {
-  background-color: #adcfaa;
-  color: black;
+.nav {
+  background-color: #071c3d;
+  font-size: 1.5em;
+  color:white;
+  text-decoration: none;
 }
 
 .tc-chart-js-legend {
@@ -24,10 +25,20 @@
   margin-right:10px;
 }
 
-.navig {
-  background-color: #a9ff91;
-}
-
 .plotdatainput {
   text-align: center;
+}
+
+/*.jumbotron {
+  background-color: #d7f4ef;
+  border-style: solid;
+  border: 20px lightcyan;
+}*/
+.jumbotron {
+color: black;
+text-shadow: darkslategrey 0.05em 0.05em 0.05em;
+background: #d7f4ef;
+border-style: solid !important;
+border: 1px;
+border-color: darkslategray;
 }
