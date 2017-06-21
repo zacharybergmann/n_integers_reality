@@ -11,30 +11,32 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
 
-    <!--<script src="bower_components/fusioncharts/fusioncharts.js"></script>
-    <script src="bower_components/angular-fusioncharts/dist/angular-fusioncharts.js"></script>-->
-    <!--<script src="bower_components/chartjs-directive/src/angular-chartjs-directive.js"></script>
-    -->
     <script src="bower_components/chart.js/dist/Chart.js"></script>
     <script src="bower_components/tc-angular-chartjs/dist/tc-angular-chartjs.js"></script>
     
-
     <script src="app/app.module.js"></script>
-    <script src="app/app.routes.js"></script>    
+    <script src="app/app.routes.js"></script>
+    <script src="app/directives/chartgen.directive.module.js"></script>   
+    <script src="app/directives/chartgen.directive.js"></script>
     <script src="app/dataviz/dataviz.module.js"></script>    
-    <script src="app/dataviz/dataviz.component.js"></script>      
+    <script src="app/dataviz/dataviz.component.js"></script>
   </head>
 
-<body class="container">
+<body class="container-fluid row">
   <div class="row navig">
-    <ul class="nav nav-tabs navbar-right">
-      <li role="presentation"><a href="#">Home</a></li>
-      <li role="presentation" class="active"><a href="#/dataviz">Visualize Data</a></li>
+    <ul class="nav nav-tabs row">
+      <li role="presentation" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6"></li>
+      <li role="presentation" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3"><a href="#">Home</a></li>
+      <li role="presentation" class="active col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3"><a href="#/dataviz">Visualize Data</a></li>
     </ul>
   </div>
-  <h1>Hello World!</h1>
-
-  <div ng-view></div>
-
+  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+  <div class="row col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+    <h1>Hello World!</h1>
+  
+    <div ng-view></div>
+  
+  </div>
+  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>  
 </body>
 </html>
