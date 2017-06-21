@@ -26,12 +26,12 @@
   </head>
 
 <body class="container">
-  <br />
-  <nav class="row nav">
-    <div class="col-xs-2 col-sm-10 col-md-10 col-lg-10 col-xl-10"></div>
-    <a class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" href="#/dataviz">Visualize Data</a>      
-  </nav>  
-  
+  <div class="row navig">
+    <ul class="nav nav-tabs navbar-right">
+      <li role="presentation"><a href="#">Home</a></li>
+      <li role="presentation" class="active"><a href="#/dataviz">Visualize Data</a></li>
+    </ul>
+  </div>
   <h1>Hello World!</h1>
 
   <div ng-view></div>

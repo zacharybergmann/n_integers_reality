@@ -1,21 +1,30 @@
-<div>
-  <div>
-    <input ng-model="coords" placeholder="Ex. (1, 3), (6, 7), ..." \>
-    <button ng-click="$ctrl.createPlot(coords)">Create Plot</button>
-  </div>
-  <div class="col-md-12">
-    <h2>Bubble Chart</h2>
-  </div>
-  <div class="col-md-8">
-    <canvas
-      tc-chartjs-bubble
-      chart-data="$ctrl.chartData"
-      chart-options="$ctrl.chartOptions"
-      chart-click="$ctrl.onChartClick(event)"
-      chart-legend="bubbleChart"
-    ></canvas>
-  </div>
-  <div class="col-md-4">
-    <div tc-chartjs-legend chart-legend="bubbleChart" class="tc-chart-js-legend"></div>
-  </div>
+<div class="row">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Bubble Chart</h2>
+    </div>
+    <div class="col-md-9">
+      <canvas
+        tc-chartjs-bubble
+        chart-data="$ctrl.chartData"
+        chart-options="$ctrl.chartOptions"
+        chart-click="$ctrl.onChartClick(event)"
+        chart-legend="bubbleChart"
+      ></canvas>
+    </div>
+    <div class="col-md-3">
+      <div tc-chartjs-legend chart-legend="bubbleChart" class="tc-chart-js-legend"></div>
+    </div>
+  </div>  
+  <br />
+  <br />
+
+  <div class="input-group">
+    <input type="text" class="form-control" ng-model="coords" placeholder="Ex. (1, 3), (6, 7), ...">
+    <span class="input-group-btn">
+      <button class="btn btn-primary" type="button" ng-click="$ctrl.createPlot(coords)">Create Plot!</button>
+    </span>
+  </div><!-- /input-group -->
+
+
 </div>
