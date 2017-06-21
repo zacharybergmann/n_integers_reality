@@ -11,19 +11,8 @@ angular
       this.chartData = {
         datasets: [
           {
-            label: 'First Dataset',
-            data: [
-              {
-                x: 20,
-                y: 30,
-                r: 15,
-              },
-              {
-                x: 40,
-                y: 10,
-                r: 10,
-              },
-            ],
+            label: 'Dataset #1',
+            data: [],
             backgroundColor: '#FF6384',
             hoverBackgroundColor: '#FF6384',
           },
@@ -40,11 +29,10 @@ angular
         const cleanedDataPts = dataPtsStr.trim().slice(1, dataPtsStr.length - 1).split(applyRegex);
         cleanedDataPts.forEach((xyPtsStr) => {
           const xyTuple = xyPtsStr.split(',');
-          this.items[0].values.push({
-            shape: 'circle',
-            size: 0.5,
+          this.chartData.datasets[0].data.push({
             x: +xyTuple[0],
             y: +xyTuple[1],
+            r: 10,
           });
         });
         console.log(this.items, 'new item list');
