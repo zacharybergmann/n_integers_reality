@@ -12,7 +12,7 @@ n_integers_reality is an application for creating single scatter plot visualizat
 
 ### Installation / Config to work locally on project
 
-The application can be found at https://github.com/zacharybergmann/n-integers-reality
+The application can be found at https://github.com/zacharybergmann/n_integers_reality
 
 To use/contribute to the application:
 
