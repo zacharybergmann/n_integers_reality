@@ -16,7 +16,14 @@
   ],
   "dependencies": {
     "angular": "^1.6.4",
-    "angular-route": "^1.6.4",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "chart.js": "^2.6.0",
+    "tc-angular-chartjs": "^2.1.4",
+    "angular-route": "^1.6.4"
+  },
+  "resolutions": {
+    "angular": "^1.6.4",
+    "d3": "^4.9.1",
+    "nvd3": "^1.8.5"
   }
 }
