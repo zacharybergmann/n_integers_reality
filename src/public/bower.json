@@ -22,8 +22,6 @@
     "angular-route": "^1.6.4"
   },
   "resolutions": {
-    "angular": "^1.6.4",
-    "d3": "^4.9.1",
-    "nvd3": "^1.8.5"
+    "angular": "^1.6.4"
   }
 }
